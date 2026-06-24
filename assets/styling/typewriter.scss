@@ -1,0 +1,187 @@
+@import 'typed';
+.input-wrapper {
+  display: block;
+  width: 100%; height: 24px;
+  position: relative;
+  > input, > .placeholder {
+    display: block;
+    appearance: none;
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: transparent;
+    border: none;
+  }
+  > .placeholder {
+    pointer-events: none;
+    &::before { font-weight: 600; }
+    @include typed(
+            "How high is Mount Everest?",
+            "How many stars are there?",
+            "What is the best career for me?",
+            1.5, (caret-width: 2px, caret-space: 2px)
+    );
+  }
+  > input { &:focus, &:active {
+    + .placeholder { display: none; }
+  } }
+}
+
+.sillytext {
+
+  @include typed(
+        "I'm walking here!",
+          1,
+          (caret-width: 2px, caret-space: 2px, iterations: 0,    ));
+
+}
+
+.site-reference {
+
+  @include typed(
+          (
+
+                  "ava@web:~$ tree juice.toastxc.xyz/<[100]>": (),
+                  "|":(),
+                  "/":(),
+                  "-":(),
+                  "\\":(),
+
+
+
+                  //"": (),
+
+          ),
+
+          20,
+
+
+          ( caret-width: 2px, caret-space: 2px, iterations: 1,   end-on: "index\A ├── levels\A │   ├── estrogen\A │   ├── others \A│   ├── shbg\A│   └── testosterone \A└── medications \A├── anti-androgens \A│   ├── bicaludimide \A│   ├── cyproterone \A│   └── spironolactone \A└── estrogen \A├── gel \A├── implants \A├── injections \A├── patches \A└── pills",   ),
+
+  );
+
+}
+
+
+.guide {
+
+  @include typed(
+          "here you'll find a basic guide on HRT medications (and what to do with them)",
+          6,
+
+          ( caret-width: 2px, caret-space: 2px, iterations: 0,    ));
+
+}
+
+
+.estrogen-levels {
+
+  @include typed(
+          "> Estrogen Levels",
+          3,
+
+          ( caret-width: 2px, caret-space: 2px, iterations: 0,    ));
+
+}
+
+.testosterone-levels {
+
+  @include typed(
+          "> Testosterone Levels",
+          3,
+
+          ( caret-width: 2px, caret-space: 2px, iterations: 0,    ));
+
+}
+
+
+.other-levels {
+
+  @include typed(
+          "> Other Levels",
+          3,
+
+          ( caret-width: 2px, caret-space: 2px, iterations: 0,    ));
+
+}
+
+
+.title {
+
+  @include typed(
+          "> Title",
+          3,
+
+          ( caret-width: 2px, caret-space: 2px, iterations: 0,    ));
+
+}
+
+
+.estrogen-medications {
+
+  @include typed(
+          "> Estrogen Medications",
+          3,
+
+          ( caret-width: 2px, caret-space: 2px, iterations: 0,    ));
+
+}
+.title-pbs {
+
+  @include typed(
+          "> Pharmaceutical Benefits Scheme",
+          3,
+
+          ( caret-width: 2px, caret-space: 2px, iterations: 0,    ));
+
+}
+
+.title-implants {
+
+  @include typed(
+          "> Implants",
+          3,
+
+          ( caret-width: 2px, caret-space: 2px, iterations: 0,    ));
+
+}
+
+.title-injections {
+
+  @include typed(
+          "> Injections",
+          3,
+
+          ( caret-width: 2px, caret-space: 2px, iterations: 0,    ));
+
+}
+
+.title-pills {
+
+  @include typed(
+          "> Pills",
+          3,
+
+          ( caret-width: 2px, caret-space: 2px, iterations: 0,    ));
+
+}
+
+.title-gel {
+
+  @include typed(
+          "> Gel",
+          3,
+
+          ( caret-width: 2px, caret-space: 2px, iterations: 0,    ));
+
+}
+
+.title-patches {
+
+  @include typed(
+          "> Transdermal Patches",
+          3,
+
+          ( caret-width: 2px, caret-space: 2px, iterations: 0,    ));
+
+}
