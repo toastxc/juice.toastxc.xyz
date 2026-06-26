@@ -6,7 +6,6 @@ use dioxus::prelude::*;
 pub fn Levels() -> Element {
     rsx! {
         a { class: Tree::STEM, "levels" }
-        Link { to: Route::LevelsPage {}, class: Tree::LEAF, "Estrogen" }
         ul {
             li {
                 Link {
@@ -21,7 +20,7 @@ pub fn Levels() -> Element {
             li {
                 Link {
                     to: Route::LevelsRoute {
-                        name: ">testosterone".to_string(),
+                        name: "testosterone".to_string(),
                     },
                     class: Tree::LEAF,
                     "Testosterone"
