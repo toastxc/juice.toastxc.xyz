@@ -185,3 +185,11 @@
           ( caret-width: 2px, caret-space: 2px, iterations: 0,    ));
 
 }
+
+.title-monotherapy {
+  @include typed(
+          "> Monotherapy",
+          3,
+
+          ( caret-width: 2px, caret-space: 2px, iterations: 0,    ));
+}
