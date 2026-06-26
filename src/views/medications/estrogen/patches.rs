@@ -6,14 +6,9 @@ use dioxus::prelude::*;
 pub fn Patches() -> Element {
     rsx! {
 
-        div { class: "{Doc::WARN}",
-            "subject to supply shortages"
+        div { class: "{Doc::WARN}", "subject to supply shortages" }
 
-        }
-
-        div { class: "{Doc::WARN}",
-            "can cause adverse skin reactions"
-        }
+        div { class: "{Doc::WARN}", "can cause adverse skin reactions" }
         br {}
         p { class: "{Doc::TITLE} title-patches" }
         p { class: Doc::HEADING, "Forms" }

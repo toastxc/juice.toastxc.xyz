@@ -14,7 +14,6 @@ impl Doc {
         "hover:text-black hover:bg-fuchsia-300 underline text-fuchsia-300";
 
     pub const WARN: &'static str = "my-1 border-2 bg-red-100 p-1 text-red-900 dark:bg-red-800 dark:text-red-50 dark:shadow-white";
-
 }
 
 pub struct Table;
@@ -33,4 +32,3 @@ impl TableGrey {
     pub const HEAD: &'static str = "";
     pub const HEAD_CELL: &'static str = "text-left";
 }
-

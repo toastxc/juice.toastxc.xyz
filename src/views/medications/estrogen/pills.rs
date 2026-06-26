@@ -6,10 +6,7 @@ use dioxus::prelude::*;
 pub fn Pills() -> Element {
     rsx! {
 
-        div { class: "{Doc::WARN}",
-            "carries higher risk of blood clots"
-
-        }
+        div { class: "{Doc::WARN}", "carries higher risk of blood clots" }
         br {}
         p { class: "{Doc::TITLE} title-pills" }
 

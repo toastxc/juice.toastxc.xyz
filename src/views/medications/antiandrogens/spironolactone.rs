@@ -5,12 +5,8 @@ use dioxus::prelude::*;
 pub fn Spironolactone() -> Element {
     rsx! {
 
-        div { class: "{Doc::WARN}",
-            "spiro is not very effective"
-        }
-        div { class: "{Doc::WARN}",
-            "spiro causes your body to excrete sodium and retain potassium."
-        }
+        div { class: "{Doc::WARN}", "spiro is not very effective" }
+        div { class: "{Doc::WARN}", "spiro causes your body to excrete sodium and retain potassium." }
 
         p { class: "{Doc::TITLE} title" }
 
