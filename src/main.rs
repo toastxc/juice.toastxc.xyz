@@ -64,8 +64,6 @@ const FAVICON: Asset = asset!("/assets/favicon.ico");
 // The asset macro also minifies some assets like CSS and JS to make bundled smaller
 const MAIN_CSS: Asset = asset!("/assets/styling/main.css");
 const TAILWIND_CSS: Asset = asset!("/assets/tailwind.css");
-// const TYPEWRITER_CSS: Asset = asset!("/assets/styling/typewriter.css");
-const TYPED: Asset = asset!("/assets/styling/typed.scss");
 const TYPEWRITER_SCSS: Asset = asset!("/assets/styling/typewriter.scss");
 
 fn main() {
@@ -87,8 +85,6 @@ fn App() -> Element {
         document::Link { rel: "icon", href: FAVICON }
         document::Link { rel: "stylesheet", href: MAIN_CSS }
         document::Link { rel: "stylesheet", href: TAILWIND_CSS }
-        // document::Link { rel: "stylesheet", href: TYPEWRITER_CSS }
-        document::Link { rel: "stylesheet", href: TYPED }
         document::Link { rel: "stylesheet", href: TYPEWRITER_SCSS }
 
         // The router component renders the route enum we defined above. It will handle synchronization of the URL and render
