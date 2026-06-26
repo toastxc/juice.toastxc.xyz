@@ -6,12 +6,12 @@ use dioxus::prelude::*;
 pub fn Patches() -> Element {
     rsx! {
 
-        div { class: "my-1 border-2 bg-red-100 p-1 text-red-900 dark:bg-red-800 dark:text-red-50 dark:shadow-white",
+        div { class: "{Doc::WARN}",
             "subject to supply shortages"
 
         }
 
-        div { class: "my-1 border-2 bg-red-100 p-1 text-red-900 dark:bg-red-800 dark:text-red-50 dark:shadow-white",
+        div { class: "{Doc::WARN}",
             "can cause adverse skin reactions"
         }
         br {}

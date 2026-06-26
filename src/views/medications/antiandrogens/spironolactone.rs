@@ -5,10 +5,10 @@ use dioxus::prelude::*;
 pub fn Spironolactone() -> Element {
     rsx! {
 
-        div { class: "my-1 border-2 bg-red-100 p-1 text-red-900 dark:bg-red-800 dark:text-red-50 dark:shadow-white",
+        div { class: "{Doc::WARN}",
             "spiro is not very effective"
         }
-        div { class: "my-1 border-2 bg-red-100 p-1 text-red-900 dark:bg-red-800 dark:text-red-50 dark:shadow-white",
+        div { class: "{Doc::WARN}",
             "spiro causes your body to excrete sodium and retain potassium."
         }
 
