@@ -1,9 +1,9 @@
 use dioxus::prelude::*;
-
+use crate::components::style::*;
 #[component]
 pub fn Other() -> Element {
     rsx! {
-        p { class: "text-2xl font-bold font-bold text-fuchsia-300 other-levels", "" }
+        p { class: "{Doc::TITLE} other-levels", "" }
 
         p {
             "HRT comes with certain risks and complications, measuring these is important\
@@ -12,29 +12,29 @@ pub fn Other() -> Element {
 
         br {}
 
-        p { class: "text-1xl font-bold font-bold text-fuchsia-300", "ELETROLYTES INC CREAT" }
+        p { class: "{Doc::HEADING}", "ELETROLYTES INC CREAT" }
         p {
             "This test is used to measure your electrolytes as well as kidney health (both can be\
                     impacted by HRT)"
         }
         br {}
 
-        p { class: "text-1xl font-bold font-bold text-fuchsia-300", "HEAM MASTER" }
+        p { class: "{Doc::HEADING}", "HEAM MASTER" }
         p {
             "Measures iron levels, platelet count and white cell count. Important for\
             blood clot risk assessment and immune health"
         }
         br {}
 
-        p { class: "text-1xl font-bold font-bold text-fuchsia-300", "LIVER FUNCTION" }
+        p { class: "{Doc::HEADING}", "LIVER FUNCTION" }
         p { "Measures liver indicators, some medications can adversely effect the liver" }
 
-        p { class: "text-1xl font-bold font-bold text-fuchsia-300", "" }
+        p { class: "{Doc::HEADING}", "" }
 
         br {}
 
         br {}
-        p { class: "text-1xl font-bold font-bold text-fuchsia-300", "Every 3 months" }
+        p { class: "{Doc::HEADING}", "Every 3 months" }
         hr {}
         div { class: "text-sm",
 

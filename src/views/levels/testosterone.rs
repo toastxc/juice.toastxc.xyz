@@ -1,13 +1,13 @@
 use dioxus::prelude::*;
-
+use crate::components::style::*;
 #[component]
 pub fn Testosterone() -> Element {
     rsx! {
-        p { class: "text-2xl font-bold font-bold text-fuchsia-300 testosterone-levels",
+        p { class: "{Doc::TITLE} testosterone-levels",
             ""
         }
 
-        p { class: "text-1xl font-bold font-bold text-fuchsia-300", "Total Testosterone" }
+        p { class: "{Doc::HEADING}", "Total Testosterone" }
         p {
             "The standard clinical range for testosterone in cis women is between "
             strong { "0.4nmol/L " }
@@ -16,7 +16,7 @@ pub fn Testosterone() -> Element {
             "."
         }
         br {}
-        p { class: "text-1xl font-bold font-bold text-fuchsia-300", "SHBG" }
+        p { class: "{Doc::HEADING}", "SHBG" }
         p {
             "SHBG binds to \
              sex hormones making them inactive in the body, ensure it is within clinical range. \
@@ -28,7 +28,7 @@ pub fn Testosterone() -> Element {
         }
 
         br {}
-        p { class: "text-1xl font-bold font-bold text-fuchsia-300", "Test Example" }
+        p { class: "{Doc::HEADING}", "Test Example" }
         hr {}
         pre { "MARKER        LEVEL    RANGE    UNITS" }
         pre { "Testosterone  0.6*     0.4-2    nmol/L" }

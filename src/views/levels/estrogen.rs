@@ -1,9 +1,9 @@
 use dioxus::prelude::*;
-
+use crate::components::style::*;
 #[component]
 pub fn Estrogen() -> Element {
     rsx! {
-        p { class: "text-2xl font-bold font-bold text-fuchsia-300 estrogen-levels",
+        p { class: "{Doc::TITLE} estrogen-levels",
             ""
         }
 
@@ -17,7 +17,7 @@ pub fn Estrogen() -> Element {
         }
 
         br {}
-        p { class: "text-1xl font-bold font-bold text-fuchsia-300", "Test Example" }
+        p { class: "{Doc::HEADING}", "Test Example" }
         hr {}
         pre { "MARKER     LEVEL     RANGE     UNITS" }
         pre { "Estradiol  400*       250-100   pmol/L" }
