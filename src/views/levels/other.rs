@@ -1,12 +1,13 @@
-use dioxus::prelude::*;
+use crate::components::style::TableGrey as Table;
 use crate::components::style::*;
+use dioxus::prelude::*;
 #[component]
 pub fn Other() -> Element {
     rsx! {
         p { class: "{Doc::TITLE} other-levels", "" }
 
         p {
-            "HRT comes with certain risks and complications, measuring these is important\
+            "HRT comes with certain risks and complications, measuring these is important \
         for staying on top of that."
         }
 
@@ -35,18 +36,41 @@ pub fn Other() -> Element {
 
         br {}
         p { class: "{Doc::HEADING}", "Every 3 months" }
-        hr {}
-        div { class: "text-sm",
+        table { class: "{Table::TABLE} ",
+            thead {
 
-            pre { "NAME                     MEASURES   " }
-            pre { "HORMONE ENQUIRES         Estradiol" }
-            pre { "ANDROGEN STUDY           Total T,SHBG" }
-            pre { "ELETROLYTES INC CREAT    Electrolytes" }
-            pre { "HEAM MASTER              iron/WCC/platelets " }
-            pre { "LIVER FUNCTION           Liver indicators" }
+                tr { class: Table::HEAD,
+                    th { class: Table::HEAD_CELL, "TEST NAME" }
+
+                }
+            }
+            tbody {
+
+                tr {
+                    td { "HORMONE ENQUIRES" }
+
+                }
+                tr {
+                    td { "ANDROGEN STUDY" }
+
+                }
+
+                tr {
+                    td { "ELETROLYTES INC CREAT" }
+
+                }
+
+                tr {
+                    td { "HEAM MASTER" }
+
+                }
+                tr {
+                    td { "LIVER FUNCTION (LFT)" }
+
+                }
+
+            }
         }
-        hr {}
-        p { "WCC: White Cell Count (immune cells)" }
-        p { "Total T: total testosterone (NOT FREE)" }
+
     }
 }

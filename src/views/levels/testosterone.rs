@@ -1,11 +1,10 @@
-use dioxus::prelude::*;
+use crate::components::style::TableGrey as Table;
 use crate::components::style::*;
+use dioxus::prelude::*;
 #[component]
 pub fn Testosterone() -> Element {
     rsx! {
-        p { class: "{Doc::TITLE} testosterone-levels",
-            ""
-        }
+        p { class: "{Doc::TITLE} testosterone-levels", "" }
 
         p { class: "{Doc::HEADING}", "Total Testosterone" }
         p {
@@ -29,11 +28,36 @@ pub fn Testosterone() -> Element {
 
         br {}
         p { class: "{Doc::HEADING}", "Test Example" }
-        hr {}
-        pre { "MARKER        LEVEL    RANGE    UNITS" }
-        pre { "Testosterone  0.6*     0.4-2    nmol/L" }
-        pre { "SHBG          40*      25-120   nmol/L" }
-        hr {}
+
+        table { class: Table::TABLE,
+            thead {
+
+                tr { class: Table::HEAD,
+                    th { class: "{Table::HEAD_CELL}", "MARKER" }
+
+                    th { class: Table::HEAD_CELL, "LEVEL" }
+                    th { class: Table::HEAD_CELL, "RANGE" }
+                    th { class: Table::HEAD_CELL, "UNITS" }
+                }
+            }
+            tbody {
+
+                tr {
+                    td { "Testosterone" }
+                    td { "0.6*" }
+                    td { "0.4-2" }
+                    td { "nmol/L" }
+                }
+                tr {
+                    td { "SHBG" }
+                    td { "40*" }
+                    td { "25-120" }
+                    td { "nmol/L" }
+                }
+
+            }
+        }
         p { "*level chosen at random" }
+
     }
 }
