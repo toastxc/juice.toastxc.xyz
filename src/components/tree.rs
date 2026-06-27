@@ -54,11 +54,10 @@ pub fn Medications() -> Element {
                 Link { to: Route::AntiAndrogenPage {}, class: Tree::LEAF, "Anti Androgen" }
 
             }
-            li {
-                a { class: Tree::LEAF, "Other" }
-
-            }
-
+            // li {
+            //     a { class: Tree::LEAF, "Other" }
+            //
+            // }
         }
 
     }
