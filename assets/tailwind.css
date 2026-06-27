@@ -15,9 +15,7 @@
     --color-fuchsia-300: oklch(83.3% 0.145 321.434);
     --color-fuchsia-800: oklch(45.2% 0.211 324.591);
     --color-fuchsia-950: oklch(29.3% 0.136 325.661);
-    --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
-    --color-zinc-950: oklch(14.1% 0.005 285.823);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -236,9 +234,6 @@
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
-  .resize {
-    resize: both;
-  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -313,10 +308,6 @@
   .underline {
     text-decoration-line: underline;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .hover\:bg-fuchsia-300 {
     &:hover {
       @media (hover: hover) {
@@ -387,11 +378,6 @@
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-shadow {
   syntax: "*";
@@ -469,7 +455,6 @@
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;

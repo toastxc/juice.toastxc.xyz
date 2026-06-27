@@ -18,3 +18,12 @@ web = ["dioxus/web"]
 desktop = ["dioxus/desktop"]
 # The feature that are only required for the mobile = ["dioxus/mobile"] build target should be optional and only enabled in the mobile = ["dioxus/mobile"] feature
 mobile = ["dioxus/mobile"]
+
+[profile.release]
+opt-level = "z"
+debug = false
+lto = true
+codegen-units = 1
+panic = "abort"
+incremental = false
+debug-symbols = false
