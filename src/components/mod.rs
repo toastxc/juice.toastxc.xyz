@@ -3,8 +3,8 @@
 //! component  to be used in our app.
 
 mod hero;
+pub mod stub;
 pub mod style;
 mod tree;
-pub mod stub;
 
 pub use hero::Hero;

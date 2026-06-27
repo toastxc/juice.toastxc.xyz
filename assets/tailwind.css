@@ -15,9 +15,7 @@
     --color-fuchsia-300: oklch(83.3% 0.145 321.434);
     --color-fuchsia-800: oklch(45.2% 0.211 324.591);
     --color-fuchsia-950: oklch(29.3% 0.136 325.661);
-    --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
-    --color-zinc-950: oklch(14.1% 0.005 285.823);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -221,9 +219,6 @@
   .contents {
     display: contents;
   }
-  .inline-block {
-    display: inline-block;
-  }
   .table {
     display: table;
   }
@@ -238,9 +233,6 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
-  .resize {
-    resize: both;
   }
   .border {
     border-style: var(--tw-border-style);
@@ -265,14 +257,8 @@
   .bg-red-100 {
     background-color: var(--color-red-100);
   }
-  .bg-white {
-    background-color: var(--color-white);
-  }
   .p-1 {
     padding: calc(var(--spacing) * 1);
-  }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
   }
   .pl-5 {
     padding-left: calc(var(--spacing) * 5);
@@ -299,14 +285,6 @@
     --tw-leading: 1.1;
     line-height: 1.1;
   }
-  .leading-\[1\.17\] {
-    --tw-leading: 1.17;
-    line-height: 1.17;
-  }
-  .leading-\[1\.18\] {
-    --tw-leading: 1.18;
-    line-height: 1.18;
-  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -315,17 +293,8 @@
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
   }
-  .whitespace-pre {
-    white-space: pre;
-  }
-  .text-black {
-    color: var(--color-black);
-  }
   .text-fuchsia-300 {
     color: var(--color-fuchsia-300);
-  }
-  .text-gray-200 {
-    color: var(--color-gray-200);
   }
   .text-gray-300 {
     color: var(--color-gray-300);
@@ -338,10 +307,6 @@
   }
   .underline {
     text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .hover\:bg-fuchsia-300 {
     &:hover {
@@ -365,11 +330,6 @@
   .dark\:bg-yellow-800 {
     @media (prefers-color-scheme: dark) {
       background-color: var(--color-yellow-800);
-    }
-  }
-  .dark\:bg-zinc-950 {
-    @media (prefers-color-scheme: dark) {
-      background-color: var(--color-zinc-950);
     }
   }
   .dark\:text-red-50 {
@@ -418,11 +378,6 @@
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-shadow {
   syntax: "*";
@@ -500,7 +455,6 @@
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;
