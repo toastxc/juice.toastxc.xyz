@@ -15,7 +15,6 @@ pub fn Navbar() -> Element {
 
         div { id: "navbar",
             Link { to: Route::Home {}, "Home" }
-            Link { to: Route::Blog { id: 1 }, "Site Reference" }
             // Link { to: Route::Blog { id: 1 }, "Site Reference" }
         }
 

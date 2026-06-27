@@ -5,5 +5,6 @@
 mod hero;
 pub mod style;
 mod tree;
+pub mod stub;
 
 pub use hero::Hero;

@@ -1,8 +1,7 @@
 pub struct Tree;
 impl Tree {
     pub const STEM: &'static str = "font-bold text-fuchsia-300";
-    pub const LEAF: &'static str =
-        "pl-5 text-fuchsia-300 hover:text-black hover:bg-fuchsia-300";
+    pub const LEAF: &'static str = "pl-5 text-fuchsia-300 hover:text-black hover:bg-fuchsia-300";
 }
 
 pub struct Doc;
@@ -14,6 +13,8 @@ impl Doc {
         "hover:text-black hover:bg-fuchsia-300 underline text-fuchsia-300";
 
     pub const WARN: &'static str = "my-1 border-2 bg-red-100 p-1 text-red-900 dark:bg-red-800 dark:text-red-50 dark:shadow-white";
+
+    pub const CAUTION: &'static str = "my-1 border-2 bg-red-100 p-1 text-red-900 dark:bg-yellow-800 dark:text-red-50 dark:shadow-white";
 }
 
 pub struct Table;
